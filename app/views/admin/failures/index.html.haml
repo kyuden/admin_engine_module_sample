@@ -1,0 +1,6 @@
+%h1
+  %ul
+    - @failures.each do |failure|
+      %li= failure.item
+%p= link_to "Failures", root_url
+%p= link_to "Simulate Failure", main_app.simulate_failure_path
